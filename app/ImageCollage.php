@@ -88,6 +88,6 @@ class ImageCollage
         imagepng($dest);
         $contents = ob_get_contents();
         ob_end_clean();
-        file_put_contents("temp/{$x}.png", $contents);
+        file_put_contents("temp/".$x."_temp.png", $contents);
     }
 }

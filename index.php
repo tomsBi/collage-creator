@@ -13,11 +13,11 @@ for($x=1; $x <= 10; $x++){
 }
 
 for($x=1; $x <= 5; $x++){
-    $image = imagecreatefrompng("temp\\".$x.".png");
+    $image = imagecreatefrompng("temp\\".$x."_temp.png");
     $collage->putImage($image, 1, 1, $x-1, 0);
 }
 for($x=6; $x <= 10; $x++){
-    $image = imagecreatefrompng("temp\\".$x.".png");
+    $image = imagecreatefrompng("temp\\".$x."_temp.png");
     $collage->putImage($image, 1, 1, $x-6, 1);
 }
 
